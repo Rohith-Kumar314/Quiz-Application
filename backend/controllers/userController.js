@@ -78,7 +78,7 @@ export async function login(req,res){
 
         const user = await User.findOne({email: email});
         if(!user){
-            return req.status(401).json({
+            return res.status(401).json({
                 success:false,
                 message:"Invalid Email or Password"
             });
