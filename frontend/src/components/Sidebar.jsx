@@ -27,7 +27,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Sidebar = () => {
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://quiz-application-ybcc.onrender.com";
 
   const [selectedTech, setSelectedTech] = useState(null);
   const [selectedLevel, setSelectedLevel] = useState(null);
