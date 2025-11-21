@@ -5,7 +5,7 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken';
 
 const TOKEN_EXPIRES_IN  = '24H';
-const JWT_SECRET = "your_jwt_secret_here";
+const JWT_SECRET = process.env.MY_JWT_SECRET;
 
 
 // REGISTER

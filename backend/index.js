@@ -8,7 +8,7 @@ import { connectDB } from './models/db.js';
 import userRouter from './routes/userRoutes.js';
 import resultRouter from './routes/resultRoutes.js';
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // MiddleWares
 app.use(cors());
@@ -32,5 +32,5 @@ app.get("/",(req,res)=>{
 
 
 app.listen(port,()=>{
-    console.log(`Server started on http://localhost:${port}`);
+    console.log(`Server started `);
 });

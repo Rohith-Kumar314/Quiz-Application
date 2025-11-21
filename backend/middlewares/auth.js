@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/userModel.js";
 
-const JWT_SECRET = 'your_jwt_secret_here';
+const JWT_SECRET = process.env.MY_JWT_SECRET;
 
 export default async function authMiddleware(req,res,next) {
     const authHeader = req.headers.authorization;
