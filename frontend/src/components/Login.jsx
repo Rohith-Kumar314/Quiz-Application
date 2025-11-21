@@ -16,7 +16,7 @@ const Login = ({ onLoginSuccess = null }) => {
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://quiz-application-ybcc.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
